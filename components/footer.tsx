@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from './logo';
 import { RiLinkedinBoxLine, RiGithubLine } from '@remixicon/react';
 import { RESUME } from '@/data/resume';
 
@@ -10,7 +9,6 @@ const Footer = (props: { className?: string }) => {
         className={`flex flex-col align-top justify-between ${props.className || ''}`}
       >
         <div className='inline-flex w-full flex-col items-start justify-start gap-3 border-b border-stroke-soft-200 p-4 lg:p-8'>
-          <Logo />
           <div className='flex flex-wrap items-center gap-x-4 gap-y-2 text-paragraph-sm text-text-sub-600'>
             <a
               href={`mailto:${RESUME.contact.email}`}
